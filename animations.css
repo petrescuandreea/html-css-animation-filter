@@ -44,15 +44,11 @@
 }
 
 .ex-5-square:hover {
-    margin: 0;
-    width: 120px;
-    height: 120px;
+    transform: scale(2);
 }
 
 .ex-5-square:active {
-    margin: 40px;
-    width: 30px;
-    height: 30px;
+    transform: scale(0.5);
 }
 
 
@@ -62,7 +58,6 @@
 }
 
 
-
 /* EX.7  */
 .ex-7-img {
     transition: 2.5s;
@@ -70,4 +65,59 @@
 
 .ex-7-img:hover {
     filter: grayscale(3) sepia(5);
+}
+
+
+/* Ex.8  */
+.ex-8-img {
+    transition: all 2.5s;
+}
+
+.ex-8-img:hover {
+    border-radius: 20px;
+    filter: saturate(0.4) sepia(0.4);
+}
+
+
+/* Ex.9  */
+.ex-9-img {
+    transition: all 2.5s;
+}
+
+.ex-9-img:hover {
+    filter: saturate(0.4) sepia(0.4);
+    border-radius: 20px;
+    transform: scale(1.5);
+}
+
+
+/* Ex.10  */
+.ex-10-icon {
+    animation: rotate 1.2s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+
+
+/* Ex.11  */
+.ex-11-icon:hover {
+    animation: littlerotate 1.5s linear;
+}
+
+@keyframes littlerotate {
+     0% {
+        transform: rotate(0);
+    }
+
+    80% {
+        transform: rotate(315deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    } 
 }
