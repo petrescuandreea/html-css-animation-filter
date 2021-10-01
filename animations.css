@@ -57,7 +57,7 @@
 
 
 /* Ex.6 */
-img:hover {
+.ex-6-img:hover {
     filter: grayscale(1);
 }
 
@@ -68,6 +68,6 @@ img:hover {
     transition: 2.5s;
 }
 
-.img:hover {
+.ex-7-img:hover {
     filter: grayscale(3) sepia(5);
 }
